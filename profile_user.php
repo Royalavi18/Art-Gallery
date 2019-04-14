@@ -29,7 +29,7 @@
 						<h2>Username : <?php echo $row["Username"]; ?></h2><br>
 						<h2>Total Spent : Rs. <?php echo $row["Spent"]; ?></h2><br><br><br>
 						<button onclick="window.location.href = 'http://localhost/Art/'" type="button" class="btn btn-default" style="font-size:120%;padding:10px;position:relative;left:20px;">Log Out</button>
-						<button data-toggle="modal" data-target="#squarespaceModal" onclick="edit()" type="button" class="btn btn-default" style="font-size:120%;padding:10px;position:relative;left:30px;">Edit Details</button>
+						<button data-toggle="modal" data-target="#squarespaceModal" type="button" class="btn btn-default" style="font-size:120%;padding:10px;position:relative;left:30px;">Edit Details</button>
 					</div>
 				</div>
 				<div class="col-md-4"  style="border-right: 2px solid #fff;border-left: 2px solid #fff;">
@@ -88,7 +88,7 @@
 			<h3 class="modal-title" id="lineModalLabel">My Modal</h3>
 		</div>
 		<div class="modal-body">
-			
+
             <!-- content goes here -->
 			<form method="post" action="http://localhost/Art/edit.php?q=<?php echo $userid; ?>">
 			<div class="form-group">
@@ -115,7 +115,7 @@
 				<div class="btn-group btn-delete hidden" role="group">
 					<button type="button" id="delImage" class="btn btn-default btn-hover-red" data-dismiss="modal"  role="button">Delete</button>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
